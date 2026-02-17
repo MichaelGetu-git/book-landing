@@ -50,71 +50,73 @@
 
 :root {
   --radius: 0.625rem;
-  --background: #030712;
+  --background: #020617;
+  /* Bluey-Black (Slate 950) */
   --foreground: #ffffff;
-  --card: #0a0f1e;
+  --card: #0f172a;
   --card-foreground: #ffffff;
-  --popover: #0a0f1e;
+  --popover: #0f172a;
   --popover-foreground: #ffffff;
-  --primary: #9810fa;
+  --primary: #7c3aed;
+  /* Violet-Blue (lighter purple/blue) */
   --primary-foreground: #ffffff;
-  --secondary: #1f2937;
+  --secondary: #1e293b;
   --secondary-foreground: #ffffff;
-  --muted: #1f2937;
-  --muted-foreground: #99a1af;
-  --accent: #59168b;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #5b21b6;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
-  --border: #1f2937;
-  --input: #1f2937;
-  --ring: #9810fa;
-  --chart-1: #9810fa;
-  --chart-2: #59168b;
-  --chart-3: #c27aff;
-  --chart-4: #4f46e5;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #7c3aed;
+  --chart-1: #7c3aed;
+  --chart-2: #5b21b6;
+  --chart-3: #a78bfa;
+  --chart-4: #4338ca;
   --chart-5: #06b6d4;
-  --sidebar: #030712;
+  --sidebar: #020617;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #9810fa;
+  --sidebar-primary: #7c3aed;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #101828;
+  --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #1f2937;
-  --sidebar-ring: #9810fa;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #7c3aed;
 }
 
 .dark {
-  --background: #030712;
+  --background: #020617;
   --foreground: #ffffff;
-  --card: #0a0f1e;
+  --card: #0f172a;
   --card-foreground: #ffffff;
-  --popover: #0a0f1e;
+  --popover: #0f172a;
   --popover-foreground: #ffffff;
-  --primary: #9810fa;
+  --primary: #7c3aed;
   --primary-foreground: #ffffff;
-  --secondary: #101828;
+  --secondary: #1e293b;
   --secondary-foreground: #ffffff;
-  --muted: #101828;
-  --muted-foreground: #99a1af;
-  --accent: #59168b;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #5b21b6;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
-  --border: #1f2937;
-  --input: #1f2937;
-  --ring: #9810fa;
-  --chart-1: #9810fa;
-  --chart-2: #59168b;
-  --chart-3: #c27aff;
-  --chart-4: #4f46e5;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #7c3aed;
+  --chart-1: #7c3aed;
+  --chart-2: #5b21b6;
+  --chart-3: #a78bfa;
+  --chart-4: #4338ca;
   --chart-5: #06b6d4;
-  --sidebar: #030712;
+  --sidebar: #020617;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #9810fa;
+  --sidebar-primary: #7c3aed;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #101828;
+  --sidebar-accent: #1e293b;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #1f2937;
-  --sidebar-ring: #9810fa;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #7c3aed;
 }
 
 @layer base {
@@ -138,14 +140,14 @@
 
 @layer utilities {
   .bg-primary-gradient {
-    background: linear-gradient(to right, #9810fa, #59168b);
+    background: linear-gradient(to right, #7c3aed, #5b21b6);
   }
 
   /* Grid Overlay */
   .bg-grid {
     background-image:
-      linear-gradient(90deg, rgba(152, 16, 250, 0.05) 1px, transparent 1px),
-      linear-gradient(rgba(152, 16, 250, 0.05) 1px, transparent 1px);
+      linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+      linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 
@@ -157,7 +159,7 @@
     transform: translate(-50%, -50%);
     width: 60vw;
     height: 60vh;
-    background: radial-gradient(circle at center, rgba(152, 16, 250, 0.15), transparent 70%);
+    background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15), transparent 70%);
     filter: blur(100px);
     pointer-events: none;
     z-index: -1;
@@ -165,19 +167,20 @@
 
   /* Neo-Brutalist "Hard" Shadows */
   .shadow-brutalist {
-    box-shadow: 6px 6px 0px 0px #9810fa;
+    box-shadow: 6px 6px 0px 0px #7c3aed;
   }
 
   .hover-shadow-brutalist:hover {
-    box-shadow: 8px 8px 0px 0px #9810fa;
+    box-shadow: 8px 8px 0px 0px #7c3aed;
     transform: translate(-2px, -2px);
   }
 
   /* Revolutionary Typography */
   .text-revolutionary {
-    @apply font-bold tracking-tight;
+    @apply font-bold tracking-tighter;
     font-family: var(--font-sans);
     font-size: clamp(2.5rem, 5vw, 4.5rem);
-    line-height: 1.1;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
   }
 }
