@@ -14,14 +14,14 @@ const Hero = () => {
                     {/* Left Column: Massive Typography */}
                     <div className="flex-1 space-y-12 animate-in fade-in slide-in-from-left duration-1000">
                         <div className="space-y-4">
-                            <div className="inline-flex items-center gap-2 px-4 py-1 rounded-none border border-primary/30 bg-primary/5 text-primary text-xs font-black uppercase tracking-widest">
+                            <div className="inline-flex items-center gap-2 px-4 py-1 rounded-none border border-primary/30 bg-primary/5 text-primary text-xs font-bold tracking-widest">
                                 <span className="w-2 h-2 bg-primary animate-pulse" />
                                 New Release 2026
                             </div>
-                            <h1 className="text-revolutionary uppercase text-white">
-                                Mastering <br />
-                                The Deep <br />
-                                <span className="text-primary italic">Web.</span>
+                            <h1 className="text-revolutionary text-white">
+                                Mastering
+                                The <br />    
+                                <span className="text-primary italic">Deep Web.</span>
                             </h1>
                         </div>
 
@@ -30,11 +30,11 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-wrap items-center gap-6 pt-6">
-                            <button className="bg-primary text-white text-lg font-black uppercase px-12 py-5 rounded-none shadow-brutalist hover-shadow-brutalist transition-all flex items-center gap-3">
+                            <button className="bg-primary text-white text-lg font-bold px-12 py-5 rounded-none shadow-brutalist hover-shadow-brutalist transition-all flex items-center gap-3">
                                 Pre-order Now
                                 <span className="text-xs opacity-50">($49.00)</span>
                             </button>
-                            <button className="text-white text-sm font-black uppercase tracking-widest hover:text-primary transition-colors border-b-2 border-primary/20 hover:border-primary pb-1">
+                            <button className="text-white text-sm font-bold tracking-widest hover:text-primary transition-colors border-b-2 border-primary/20 hover:border-primary pb-1">
                                 View Sample Chapter
                             </button>
                         </div>
@@ -48,8 +48,8 @@ const Hero = () => {
                                 { label: 'Rating', val: '4.9/5' }
                             ].map((stat) => (
                                 <div key={stat.label} className="space-y-1">
-                                    <div className="text-2xl font-black text-white">{stat.val}</div>
-                                    <div className="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">{stat.label}</div>
+                                    <div className="text-2xl font-bold text-white">{stat.val}</div>
+                                    <div className="text-[10px] tracking-widest text-muted-foreground font-bold">{stat.label}</div>
                                 </div>
                             ))}
                         </div>
@@ -76,7 +76,7 @@ const Hero = () => {
             </div>
 
             {/* Background Decorative Text */}
-            <div className="absolute top-1/2 left-0 -translate-y-1/2 text-[20rem] font-black text-white/[0.02] select-none pointer-events-none whitespace-nowrap -rotate-90">
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 text-[20rem] font-bold text-white/[0.02] select-none pointer-events-none whitespace-nowrap -rotate-90">
                 REVOLUTION
             </div>
         </section>

@@ -27,12 +27,12 @@ const Include = () => {
 
         {/* Header Block */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
-          <h2 className="text-revolutionary uppercase text-white leading-none">
+          <h2 className="text-revolutionary text-white leading-none">
             What's <br />
             <span className="text-primary italic">Inside.</span>
           </h2>
           <div className="text-right max-w-sm">
-            <div className="text-3xl font-black text-white italic mb-2">8 CHAPTERS.</div>
+            <div className="text-3xl font-bold text-white italic mb-2">8 CHAPTERS.</div>
             <p className="text-muted-foreground font-medium">A deep dive into the architecture of modern web applications.</p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Include = () => {
                   <div className="flex-shrink-0 w-8 h-8 border border-white/20 flex items-center justify-center text-white/50 group-hover:bg-primary group-hover:text-white transition-all">
                     <Plus size={16} />
                   </div>
-                  <span className="text-lg font-bold text-white uppercase tracking-tight">
+                  <span className="text-lg font-bold text-white tracking-tight">
                     {item}
                   </span>
                 </div>
@@ -92,7 +92,7 @@ const Include = () => {
             </div>
 
             <div className="pt-8">
-              <button className="w-full bg-white text-black text-xl font-black uppercase px-12 py-6 rounded-none shadow-brutalist hover-shadow-brutalist transition-all flex items-center justify-center gap-4">
+              <button className="w-full bg-white text-black text-xl font-bold px-12 py-6 rounded-none shadow-brutalist hover-shadow-brutalist transition-all flex items-center justify-center gap-4">
                 I want this book
                 <span className="w-8 h-px bg-black opacity-20" />
               </button>
@@ -103,7 +103,7 @@ const Include = () => {
       </div>
 
       {/* Top Label */}
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[12px] font-black tracking-[1em] text-white/10 uppercase select-none">
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[12px] font-bold tracking-[1em] text-white/10 select-none">
         MASTERING THE DEEP WEB
       </div>
     </section>

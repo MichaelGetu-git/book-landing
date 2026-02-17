@@ -13,12 +13,12 @@ const Footer = () => {
           {/* Left Column: Author Bio & Massive Label */}
           <div className="space-y-12">
             <div className="flex items-center gap-8">
-              <div className="w-24 h-24 bg-white/5 border border-white/10 flex items-center justify-center font-black text-2xl text-primary">
+              <div className="w-24 h-24 bg-white/5 border border-white/10 flex items-center justify-center font-bold text-2xl text-primary">
                 XR
               </div>
               <div className="space-y-1">
-                <h3 className="text-3xl font-black text-white uppercase tracking-tight">Xiaoying Riley</h3>
-                <p className="text-sm font-black text-primary uppercase tracking-[0.3em]">Lead Product Designer</p>
+                <h3 className="text-3xl font-bold text-white tracking-tight">Xiaoying Riley</h3>
+                <p className="text-sm font-bold text-primary tracking-[0.3em]">Lead Product Designer</p>
               </div>
             </div>
 
@@ -41,15 +41,15 @@ const Footer = () => {
           {/* Right Column: High-Impact Signoff */}
           <div className="flex flex-col justify-between items-start lg:items-end text-left lg:text-right space-y-12">
             <div className="space-y-4">
-              <h2 className="text-[6rem] md:text-[8rem] lg:text-[10rem] font-black text-white/[0.03] select-none leading-none tracking-tighter">
+              <h2 className="text-[6rem] md:text-[8rem] lg:text-[10rem] font-bold text-white/[0.03] select-none leading-none tracking-tighter">
                 FIN.
               </h2>
-              <div className="text-sm font-black text-white/20 uppercase tracking-[1em]">END_OF_DOCUMENT</div>
+              <div className="text-sm font-bold text-white/20 tracking-[1em]">END_OF_DOCUMENT</div>
             </div>
 
             <div className="space-y-6 w-full lg:max-w-xs">
-              <p className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Ready to build the future?</p>
-              <button className="w-full bg-white text-black font-black uppercase py-6 shadow-brutalist hover-shadow-brutalist transition-all flex items-center justify-center gap-4">
+              <p className="text-muted-foreground text-sm tracking-widest font-bold">Ready to build the future?</p>
+              <button className="w-full bg-white text-black font-bold py-6 shadow-brutalist hover-shadow-brutalist transition-all flex items-center justify-center gap-4">
                 Purchase Book <ArrowRight size={20} />
               </button>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* Global Bottom Bar */}
-        <div className="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between gap-8 text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">
+        <div className="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between gap-8 text-[10px] font-bold text-white/30 tracking-[0.3em]">
           <div>© 2026 REVOLUTION_PROJECT_ALL_RIGHTS_RESERVED</div>
           <div className="flex gap-12">
             <a href="#" className="hover:text-primary transition-colors">Privacy_Policy</a>
@@ -76,7 +76,7 @@ const Footer = () => {
 const SocialIcon = ({ icon: Icon, label }: { icon: any, label: string }) => (
   <a
     href="#"
-    className="group flex items-center gap-3 text-xs font-black text-white/50 uppercase tracking-widest hover:text-primary transition-all underline decoration-white/10 decoration-2 underline-offset-8 hover:decoration-primary"
+    className="group flex items-center gap-3 text-xs font-bold text-white/50 tracking-widest hover:text-primary transition-all underline decoration-white/10 decoration-2 underline-offset-8 hover:decoration-primary"
   >
     <Icon size={16} />
     {label}

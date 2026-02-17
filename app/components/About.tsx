@@ -44,7 +44,7 @@ const About = () => {
                 {/* Header Block */}
                 <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-24">
                     <div className="space-y-4 max-w-2xl">
-                        <h2 className="text-revolutionary uppercase text-white leading-none">
+                        <h2 className="text-revolutionary text-white leading-none">
                             Revolutionary <br />
                             <span className="text-primary italic">Learning.</span>
                         </h2>
@@ -52,7 +52,7 @@ const About = () => {
                             This isn't just a book. It's an architectural blueprint for your career as a world-class developer.
                         </p>
                     </div>
-                    <div className="hidden md:block text-[8rem] font-black text-white/[0.03] select-none leading-none">
+                    <div className="hidden md:block text-[8rem] font-bold text-white/[0.03] select-none leading-none">
                         01
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const About = () => {
                             className="group p-12 border-r border-b border-white/5 hover:bg-primary/[0.02] transition-colors duration-500 relative overflow-hidden"
                         >
                             {/* Feature Number */}
-                            <div className="absolute top-8 right-8 text-xs font-black text-white/10 group-hover:text-primary/30 transition-colors">
+                            <div className="absolute top-8 right-8 text-xs font-bold text-white/10 group-hover:text-primary/30 transition-colors">
                                 {(index + 1).toString().padStart(2, '0')}
                             </div>
 
@@ -74,7 +74,7 @@ const About = () => {
                                     <feature.icon className="w-8 h-8 text-white group-hover:text-primary transition-colors" />
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tight group-hover:text-primary transition-colors">
+                                    <h3 className="text-2xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
                                         {feature.title}
                                     </h3>
                                     <p className="text-muted-foreground leading-relaxed">
@@ -92,7 +92,7 @@ const About = () => {
             </div>
 
             {/* Side Label */}
-            <div className="absolute top-1/2 right-0 -translate-y-1/2 text-[8rem] font-black text-white/[0.01] select-none pointer-events-none rotate-90 origin-right">
+            <div className="absolute top-1/2 right-0 -translate-y-1/2 text-[8rem] font-bold text-white/[0.01] select-none pointer-events-none rotate-90 origin-right">
                 FEATURES
             </div>
         </section>

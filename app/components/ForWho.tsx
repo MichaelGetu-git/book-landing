@@ -30,12 +30,12 @@ const ForWho = () => {
 
         {/* Header Block: Left-Aligned Stack */}
         <div className="max-w-4xl mb-24 space-y-12">
-          <h2 className="text-revolutionary uppercase text-white leading-none">
+          <h2 className="text-revolutionary   text-white leading-none">
             Target <br />
             <span className="text-primary italic">Audience.</span>
           </h2>
           <div className="space-y-4">
-            <div className="text-sm font-black text-white/20 uppercase tracking-[0.5em]">
+            <div className="text-sm font-bold text-white/20 uppercase tracking-[0.5em]">
               blueprint_03
             </div>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium leading-relaxed">
@@ -52,8 +52,8 @@ const ForWho = () => {
               className="group flex flex-col md:flex-row md:items-center justify-between gap-8 py-10 border-b border-white/5 hover:bg-white/[0.01] transition-all px-4"
             >
               <div className="flex items-center gap-8">
-                <span className="text-sm font-black text-primary font-mono">0{index + 1}</span>
-                <h3 className="text-2xl md:text-4xl font-black text-white uppercase group-hover:translate-x-4 transition-transform duration-500">
+                <span className="text-sm font-bold text-primary font-mono">0{index + 1}</span>
+                <h3 className="text-2xl md:text-4xl font-bold text-white group-hover:translate-x-4 transition-transform duration-500">
                   {audience.title}
                 </h3>
               </div>
@@ -70,7 +70,7 @@ const ForWho = () => {
 
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-6xl font-black text-white uppercase leading-none">
+                <h2 className="text-4xl md:text-6xl font-bold text-white leading-none">
                   Get A Free <br />
                   <span className="text-primary">Preview.</span>
                 </h2>
@@ -87,12 +87,12 @@ const ForWho = () => {
               <input
                 type="email"
                 placeholder="YOUR_EMAIL_ADDRESS"
-                className="flex-1 bg-white/5 border border-white/10 px-8 py-6 text-white font-mono uppercase tracking-widest text-sm focus:outline-none focus:border-primary transition-all rounded-none"
+                className="flex-1 bg-white/5 border border-white/10 px-8 py-6 text-white font-mono tracking-widest text-sm focus:outline-none focus:border-primary transition-all rounded-none"
                 required
               />
               <button
                 type="submit"
-                className="bg-white text-black px-12 py-6 font-black uppercase text-sm tracking-widest hover:bg-primary hover:text-white transition-all shadow-brutalist hover-shadow-brutalist rounded-none flex items-center gap-4"
+                className="bg-white text-black px-12 py-6 font-bold text-sm tracking-widest hover:bg-primary hover:text-white transition-all shadow-brutalist hover-shadow-brutalist rounded-none flex items-center gap-4"
               >
                 Send Request <Send size={16} />
               </button>
@@ -101,10 +101,10 @@ const ForWho = () => {
           </div>
 
           {/* Background Decorative Labels */}
-          <div className="absolute top-4 right-4 text-[10px] font-black text-white/5 uppercase tracking-widest pointer-events-none">
+          <div className="absolute top-4 right-4 text-[10px] font-bold text-white/5 uppercase tracking-widest pointer-events-none">
             DATA_SECURE_ENCRYPTED
           </div>
-          <div className="absolute bottom-4 left-4 text-[10px] font-black text-white/5 uppercase tracking-widest pointer-events-none">
+          <div className="absolute bottom-4 left-4 text-[10px] font-bold text-white/5 uppercase tracking-widest pointer-events-none">
             © 2026_REVOLUTION_THEME
           </div>
         </div>
