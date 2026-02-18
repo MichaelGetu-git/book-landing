@@ -57,13 +57,13 @@
   --card-foreground: #ffffff;
   --popover: #0f172a;
   --popover-foreground: #ffffff;
-  --primary: #7c3aed;
+  --primary: #a855f7;
   /* Violet-Blue (lighter purple/blue) */
   --primary-foreground: #ffffff;
   --secondary: #1e293b;
   --secondary-foreground: #ffffff;
   --muted: #1e293b;
-  --muted-foreground: #94a3b8;
+  --muted-foreground: #cbd5e1;
   --accent: #5b21b6;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
@@ -92,12 +92,12 @@
   --card-foreground: #ffffff;
   --popover: #0f172a;
   --popover-foreground: #ffffff;
-  --primary: #7c3aed;
+  --primary: #a855f7;
   --primary-foreground: #ffffff;
   --secondary: #1e293b;
   --secondary-foreground: #ffffff;
   --muted: #1e293b;
-  --muted-foreground: #94a3b8;
+  --muted-foreground: #cbd5e1;
   --accent: #5b21b6;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
@@ -126,6 +126,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    background-image: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.15) 0%, transparent 60%);
   }
 
   h1,
@@ -140,7 +141,7 @@
 
 @layer utilities {
   .bg-primary-gradient {
-    background: linear-gradient(to right, #7c3aed, #5b21b6);
+    background: linear-gradient(to right, var(--primary), #5b21b6);
   }
 
   /* Grid Overlay */
@@ -167,11 +168,11 @@
 
   /* Neo-Brutalist "Hard" Shadows */
   .shadow-brutalist {
-    box-shadow: 6px 6px 0px 0px #7c3aed;
+    box-shadow: 6px 6px 0px 0px var(--primary);
   }
 
   .hover-shadow-brutalist:hover {
-    box-shadow: 8px 8px 0px 0px #7c3aed;
+    box-shadow: 8px 8px 0px 0px var(--primary);
     transform: translate(-2px, -2px);
   }
 

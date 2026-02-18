@@ -20,12 +20,12 @@ const Hero = () => {
                             </div>
                             <h1 className="text-revolutionary text-white">
                                 Mastering
-                                The <br />    
+                                The <br />
                                 <span className="text-primary italic">Deep Web.</span>
                             </h1>
                         </div>
 
-                        <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl font-medium">
+                        <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl font-normal">
                             A comprehensive guide to building revolutionary web applications with modern architecture and cutting-edge design.
                         </p>
 
@@ -56,8 +56,8 @@ const Hero = () => {
                     </div>
 
                     {/* Right Column: Book Mockup with Glow */}
-                    <div className="flex-1 relative w-full lg:max-w-sm ml-auto animate-in fade-in slide-in-from-right duration-1000">
-                        <div className="relative z-10 p-4 bg-card border border-white/5 shadow-2xl">
+                    <div className="flex-1 relative w-full lg:max-w-md ml-auto animate-in fade-in slide-in-from-right duration-1000">
+                        <div className="relative z-10 p-0 bg-card border-x border-white/10 shadow-2xl">
                             <div className="aspect-[3/4] relative overflow-hidden bg-primary/20">
                                 <Image
                                     src="/cover.png"

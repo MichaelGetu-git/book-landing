@@ -48,7 +48,7 @@ const About = () => {
                             Revolutionary <br />
                             <span className="text-primary italic">Learning.</span>
                         </h2>
-                        <p className="text-xl text-muted-foreground leading-relaxed">
+                        <p className="text-lg text-slate-300 font-normal leading-relaxed">
                             This isn't just a book. It's an architectural blueprint for your career as a world-class developer.
                         </p>
                     </div>
@@ -57,43 +57,35 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Divided Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-l border-t border-white/5">
+                {/* Card Grid Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group p-12 border-r border-b border-white/5 hover:bg-primary/[0.02] transition-colors duration-500 relative overflow-hidden"
+                            className="group p-8 bg-card border border-white/5 rounded-2xl hover:border-primary/20 transition-all duration-300 relative overflow-hidden"
                         >
                             {/* Feature Number */}
-                            <div className="absolute top-8 right-8 text-xs font-bold text-white/10 group-hover:text-primary/30 transition-colors">
+                            <div className="absolute top-6 right-6 text-[10px] font-bold text-white/10 group-hover:text-primary/30 transition-colors">
                                 {(index + 1).toString().padStart(2, '0')}
                             </div>
 
                             <div className="space-y-6">
-                                <div className="w-16 h-16 bg-white/5 border border-white/10 flex items-center justify-center rounded-none group-hover:border-primary/50 group-hover:shadow-brutalist transition-all duration-300 transform group-hover:-translate-y-1">
-                                    <feature.icon className="w-8 h-8 text-white group-hover:text-primary transition-colors" />
+                                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg text-primary group-hover:scale-110 transition-transform duration-300">
+                                    <feature.icon size={24} />
                                 </div>
-                                <div className="space-y-2">
-                                    <h3 className="text-2xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
+                                <div className="space-y-3">
+                                    <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
                                         {feature.title}
                                     </h3>
-                                    <p className="text-muted-foreground leading-relaxed">
+                                    <p className="text-base text-slate-300 font-normal leading-relaxed">
                                         {feature.description}
                                     </p>
                                 </div>
                             </div>
-
-                            {/* Hover decorative line */}
-                            <div className="absolute bottom-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-700" />
                         </div>
                     ))}
                 </div>
 
-            </div>
-
-            {/* Side Label */}
-            <div className="absolute top-1/2 right-0 -translate-y-1/2 text-[8rem] font-bold text-white/[0.01] select-none pointer-events-none rotate-90 origin-right">
-                FEATURES
             </div>
         </section>
     )

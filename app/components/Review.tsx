@@ -46,7 +46,7 @@ const Review = () => {
             <div className="flex justify-end gap-1 mb-2">
               {[1, 2, 3, 4, 5].map(i => <Star key={i} size={20} className="fill-primary text-primary" />)}
             </div>
-            <p className="text-muted-foreground font-medium tracking-widest text-sm">Trusted by 10,000+ developers worldwide.</p>
+            <p className="text-slate-300 font-normal text-base tracking-widest">Trusted by 10,000+ developers worldwide.</p>
           </div>
         </div>
 

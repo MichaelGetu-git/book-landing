@@ -33,42 +33,35 @@ const Include = () => {
           </h2>
           <div className="text-right max-w-sm">
             <div className="text-3xl font-bold text-white italic mb-2">8 CHAPTERS.</div>
-            <p className="text-muted-foreground font-medium">A deep dive into the architecture of modern web applications.</p>
+            <p className="text-slate-300 font-normal text-base">A deep dive into the architecture of modern web applications.</p>
           </div>
         </div>
 
         <div className="flex flex-col xl:flex-row items-center justify-between gap-24">
 
-          {/* Left Column: Mockups */}
-          <div className="flex-1 relative w-full lg:max-w-3xl animate-in fade-in zoom-in duration-1000">
-            {/* Geometric Backdrop */}
-            <div className="absolute -inset-12 bg-primary/5 rounded-none border border-primary/10 rotate-3" />
-
+          {/* Left Column: Simple Natural Mockups */}
+          <div className="flex-1 relative w-full lg:max-w-md animate-in fade-in zoom-in duration-1000">
             <div className="relative group">
-              {/* Tablet Mockup */}
-              <div className="relative z-10 transition-transform duration-1000 group-hover:-translate-x-4">
-                <div className="p-2 bg-card border border-white/10 shadow-2xl">
-                  <Image
-                    src="/tab.png"
-                    alt="Tablet Mockup"
-                    width={800}
-                    height={1000}
-                    className="w-full h-auto"
-                  />
-                </div>
+              {/* Tablet Image - Natural & Simple */}
+              <div className="relative z-10 transition-transform duration-500  ">
+                <Image
+                  src="/tab.png"
+                  alt="Tablet Interface"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto rounded-xl shadow-2xl"
+                />
               </div>
 
-              {/* Phone Mockup (Overlapping) */}
-              <div className="absolute -bottom-16 -right-8 md:-right-16 z-20 w-1/3 transition-transform duration-1000 group-hover:translate-x-8 group-hover:-translate-y-4">
-                <div className="p-1 bg-card border border-white/10 shadow-brutalist">
-                  <Image
-                    src="/phone.png"
-                    alt="Phone Mockup"
-                    width={300}
-                    height={600}
-                    className="w-full h-auto"
-                  />
-                </div>
+              {/* Phone Image - Overlapping & Natural */}
+              <div className="absolute -bottom-12 -right-12 z-20 w-1/2 transition-transform duration-500  ">
+                <Image
+                  src="/phone.png"
+                  alt="Mobile Interface"
+                  width={300}
+                  height={600}
+                  className="w-full h-auto rounded-xl shadow-2xl"
+                />
               </div>
             </div>
           </div>

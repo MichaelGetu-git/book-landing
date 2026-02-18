@@ -38,7 +38,7 @@ const ForWho = () => {
             <div className="text-sm font-bold text-white/20 uppercase tracking-[0.5em]">
               blueprint_03
             </div>
-            <p className="text-xl md:text-2xl text-muted-foreground font-medium leading-relaxed">
+            <p className="text-lg text-slate-300 font-normal leading-relaxed">
               If you are looking to elevate your engineering skills to a designer level, this is for you.
             </p>
           </div>
