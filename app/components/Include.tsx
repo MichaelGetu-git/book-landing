@@ -10,9 +10,7 @@ const items = [
   "Scalable Database Design with SQL",
   "Revolutionary CSS & Fluid Design",
   "Deployment & CI/CD Pipelines",
-  "Security & Auth Best Practices",
-  "Testing & CI Performance",
-  "Monetization & SaaS Strategies",
+
 ]
 
 const Include = () => {
@@ -26,7 +24,7 @@ const Include = () => {
       <div className="container mx-auto px-6 relative z-10">
 
         {/* Header Block */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-24">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-12">
           <h2 className="text-revolutionary text-white leading-none">
             What's <br />
             <span className="text-primary italic">Inside.</span>
@@ -37,10 +35,10 @@ const Include = () => {
           </div>
         </div>
 
-        <div className="flex flex-col xl:flex-row items-center justify-between gap-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between gap-16 lg:gap-40">
 
           {/* Left Column: Simple Natural Mockups */}
-          <div className="flex-1 relative w-full lg:max-w-md animate-in fade-in zoom-in duration-1000">
+          <div className="flex-[1.4] relative w-full lg:max-w-2xl animate-in fade-in zoom-in duration-1000">
             <div className="relative group">
               {/* Tablet Image - Natural & Simple */}
               <div className="relative z-10 transition-transform duration-500  ">
@@ -68,16 +66,16 @@ const Include = () => {
 
           {/* Right Column: Architectural Checklist */}
           <div className="flex-1 w-full space-y-12 animate-in fade-in slide-in-from-right duration-1000">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 gap-3">
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-6 p-6 border border-white/5 hover:border-primary/50 transition-all group"
+                  className="flex items-center gap-4 p-4 border border-white/5 hover:border-primary/50 transition-all group"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 border border-white/20 flex items-center justify-center text-white/50 group-hover:bg-primary group-hover:text-white transition-all">
-                    <Plus size={16} />
+                  <div className="flex-shrink-0 w-6 h-6 border border-white/20 flex items-center justify-center text-white/50 group-hover:bg-primary group-hover:text-white transition-all">
+                    <Plus size={12} />
                   </div>
-                  <span className="text-lg font-bold text-white tracking-tight">
+                  <span className="text-sm font-bold text-white tracking-tight">
                     {item}
                   </span>
                 </div>

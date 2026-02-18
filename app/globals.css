@@ -128,7 +128,7 @@
     @apply bg-background text-foreground font-sans;
     background-color: #020202;
     /* Slightly darker outer background */
-    padding: clamp(3rem, 15vw, 12rem);
+    padding: clamp(2rem, 15vw, 9rem);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
