@@ -19,7 +19,7 @@ const NavBar = () => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="text-sm font-bold uppercase tracking-widest text-white/80 hover:text-white transition-colors"
+                className="font-medium text-white hover:text-purple-700 transition-colors"
               >
                 {link}
               </a>
@@ -27,10 +27,10 @@ const NavBar = () => (
           </nav>
 
           <div className="flex items-center gap-4">
-            <button className="hidden sm:inline-block text-xs font-semibold tracking-[0.25em] uppercase text-white/80 hover:text-white transition-colors">
+            <button className="hidden sm:inline-block font-medium text-white hover:text-purple-700 transition-colors">
               Sign In
             </button>
-            <button className="bg-primary hover:bg-primary/90 text-white text-xs sm:text-sm font-bold uppercase px-6 sm:px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all">
+            <button className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 sm:px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all">
               Get the Book
             </button>
           </div>

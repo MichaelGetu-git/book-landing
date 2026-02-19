@@ -144,7 +144,7 @@ const HeroBook = () => {
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen pt-30 pb-20 overflow-hidden bg-grid">
+    <section className="relative min-h-screen pt-30 pb-20 overflow-hidden bg-grid font-segoe">
       <div className="hero-spotlight" />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -153,27 +153,25 @@ const Hero = () => {
           {/* Left Column: Typography */}
           <div className="flex-1 space-y-12 animate-in fade-in slide-in-from-left duration-1000">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-none border border-primary/30 bg-primary/5 text-primary text-xs font-bold tracking-widest">
+              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-none border border-primary/30 bg-primary/5 text-primary text-sm font-semibold">
                 <span className="w-2 h-2 bg-primary animate-pulse" />
                 Complete 10-Chapter Collection
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white tracking-tight">
-                <span className="italic">
-                  <span className="text-white">From Idea</span> to{" "}
-                  <span className="text-primary">Customers</span>
-                </span>
+                <span className="text-white">From Idea</span> to{" "}
+                <span className="text-primary">Customers</span>
               </h1>
             </div>
 
-            <p className="text-base md:text-lg text-slate-400 leading-relaxed max-w-xl font-light">
-              A practical 10-chapter collection that takes you from raw idea to real, paying customers — without scattered advice or hype.
+            <p className="text-md sm:text-lg text-gray-300 font-extralight leading-relaxed max-w-xl">
+              A practical 10-chapter collection that takes you from raw idea to real, paying customers without scattered advice or hype.
             </p>
 
             <div className="flex flex-wrap items-center gap-6 pt-6">
-              <button className="bg-primary text-white text-lg font-bold px-12 py-5 rounded-none shadow-brutalist hover-shadow-brutalist transition-all flex items-center gap-3">
+              <button className="bg-primary text-white text-md font-semibold px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-3">
                 Get The Collection
               </button>
-              <button className="text-white text-sm font-bold tracking-widest hover:text-primary transition-colors border-b-2 border-primary/20 hover:border-primary pb-1">
+              <button className="text-white text-md font-semibold hover:text-primary transition-colors border border-white/20 hover:border-primary px-8 py-4 rounded-full">
                 See What's Inside
               </button>
             </div>
@@ -187,8 +185,8 @@ const Hero = () => {
                 { label: 'Rating', val: '4.9/5' }
               ].map((stat) => (
                 <div key={stat.label} className="space-y-1">
-                  <div className="text-2xl font-bold text-white">{stat.val}</div>
-                  <div className="text-[10px] tracking-widest text-muted-foreground font-bold">{stat.label}</div>
+                  <div className="text-3xl md:text-4xl font-bold text-white">{stat.val}</div>
+                  <div className="text-sm font-medium text-gray-300">{stat.label}</div>
                 </div>
               ))}
             </div>

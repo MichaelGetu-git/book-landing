@@ -29,21 +29,21 @@ const audiences = [
 
 const ForWho = () => {
   return (
-    <section id="for-who" className="py-32   relative overflow-hidden">
+    <section id="for-who" className="py-32   relative overflow-hidden font-segoe">
       <div className="container mx-auto px-6">
 
         {/* Header Block: Left-Aligned Stack */}
         <div className="max-w-4xl mb-24 space-y-12">
-          <h2 className="text-6xl md:text-7xl font-bold text-white leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             Target{" "}
-            <span className="text-primary italic">Audience.</span>
+            <span className="text-primary">Audience.</span>
           </h2>
           <div className="space-y-4">
-            <div className="text-sm font-bold text-white/20 uppercase tracking-[0.5em]">
+            <div className="text-sm font-medium text-white/20">
               blueprint_03
             </div>
-            <p className="text-lg text-slate-300 font-normal leading-relaxed">
-              This collection is for builders who want to do the work the right way — not for people looking for get-rich-quick tactics or passive income shortcuts.
+            <p className="text-md md:text-lg text-gray-300 font-extralight leading-relaxed">
+              This collection is for builders who want to do the work the right way not for people looking for get-rich-quick tactics or passive income shortcuts.
             </p>
           </div>
         </div>
@@ -56,12 +56,12 @@ const ForWho = () => {
               className="group flex flex-col md:flex-row md:items-center justify-between gap-8 py-10 border-b border-white/5 hover:bg-white/[0.01] transition-all px-4"
             >
               <div className="flex items-center gap-8">
-                <span className="text-sm font-bold text-primary font-mono">0{index + 1}</span>
-                <h3 className="text-xl md:text-3xl font-bold text-white group-hover:translate-x-4 transition-transform duration-500">
+                <span className="text-sm font-bold text-primary">0{index + 1}</span>
+                <h3 className="text-lg font-bold text-white group-hover:translate-x-4 transition-transform duration-500">
                   {audience.title}
                 </h3>
               </div>
-              <p className="text-muted-foreground max-w-md md:text-right group-hover:text-white transition-colors">
+              <p className="text-sm text-gray-300 font-extralight max-w-md md:text-right leading-relaxed group-hover:text-white transition-colors">
                 {audience.description}
               </p>
             </div>
@@ -74,11 +74,11 @@ const ForWho = () => {
 
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-6xl font-bold text-white leading-none">
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
                   Get A Free <br />
                   <span className="text-primary">Preview.</span>
                 </h2>
-                <p className="text-muted-foreground max-w-sm">
+                <p className="text-md md:text-lg text-gray-300 font-extralight max-w-sm leading-relaxed">
                   Experience the architecture before you commit. We'll send you the first two chapters immediately.
                 </p>
               </div>
@@ -91,12 +91,12 @@ const ForWho = () => {
               <input
                 type="email"
                 placeholder="YOUR_EMAIL_ADDRESS"
-                className="flex-1 bg-white/5 border border-white/10 px-8 py-6 text-white font-mono tracking-widest text-sm focus:outline-none focus:border-primary transition-all rounded-none"
+                className="flex-1 bg-white/5 border border-white/10 px-8 py-6 text-white text-md font-medium focus:outline-none focus:border-primary transition-all rounded-xl"
                 required
               />
               <button
                 type="submit"
-                className="bg-white text-black px-12 py-6 font-bold text-sm tracking-widest hover:bg-primary hover:text-white transition-all shadow-brutalist hover-shadow-brutalist rounded-none flex items-center gap-4"
+                className="bg-primary text-white px-8 py-4 text-md font-semibold hover:bg-primary/90 transition-all shadow-md hover:shadow-lg rounded-full flex items-center gap-4"
               >
                 Send Request <Send size={16} />
               </button>
@@ -105,10 +105,10 @@ const ForWho = () => {
           </div>
 
           {/* Background Decorative Labels */}
-          <div className="absolute top-4 right-4 text-[10px] font-bold text-white/5 uppercase tracking-widest pointer-events-none">
+          <div className="absolute top-4 right-4 text-sm font-medium text-white/5 pointer-events-none">
             DATA_SECURE_ENCRYPTED
           </div>
-          <div className="absolute bottom-4 left-4 text-[10px] font-bold text-white/5 uppercase tracking-widest pointer-events-none">
+          <div className="absolute bottom-4 left-4 text-sm font-medium text-white/5 pointer-events-none">
             © 2026_REVOLUTION_THEME
           </div>
         </div>

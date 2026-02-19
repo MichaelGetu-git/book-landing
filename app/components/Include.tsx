@@ -204,7 +204,7 @@ const Book = ({
 
 const Include = () => {
   return (
-    <section id="features" className="py-32 relative overflow-hidden">
+    <section id="features" className="py-32 relative overflow-hidden font-segoe">
       {/* Decorative vertical lines */}
       <div className="absolute inset-0 flex justify-around pointer-events-none opacity-5">
         {[1, 2, 3, 4].map(i => <div key={i} className="w-px h-full bg-white" />)}
@@ -214,14 +214,14 @@ const Include = () => {
 
         {/* Header Block */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mb-12">
-          <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             What's{" "}
-            <span className="text-primary italic">Inside.</span>
+            <span className="text-primary">Inside.</span>
           </h2>
           <div className="text-right max-w-sm">
-            <div className="text-3xl font-bold text-white italic mb-2">10 BOOKS.</div>
-            <p className="text-slate-300 font-normal text-base">
-              A complete, step-by-step collection covering every stage of building and growing an online business — from zero to paying customers.
+            <div className="text-4xl font-bold text-white mb-2">10 BOOKS.</div>
+            <p className="text-gray-300 text-md md:text-lg font-extralight">
+              A complete, step-by-step collection covering every stage of building and growing an online business from zero to paying customers.
             </p>
           </div>
         </div>
@@ -310,7 +310,7 @@ const Include = () => {
                   <div className="flex-shrink-0 w-6 h-6 border border-white/20 flex items-center justify-center text-white/50 group-hover:bg-primary group-hover:text-white transition-all">
                     <Plus size={12} />
                   </div>
-                  <span className="text-sm font-bold text-white tracking-tight">
+                  <span className="text-sm text-gray-300 leading-relaxed">
                     {item}
                   </span>
                 </div>
@@ -318,9 +318,8 @@ const Include = () => {
             </div>
 
             <div className="pt-8">
-              <button className="w-full bg-white text-black text-xl font-bold px-12 py-6 rounded-none shadow-brutalist hover-shadow-brutalist transition-all flex items-center justify-center gap-4">
+              <button className="w-full bg-primary text-white text-md font-semibold px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-4">
                 I Want This Collection
-                <span className="w-8 h-px bg-black opacity-20" />
               </button>
             </div>
           </div>
@@ -329,7 +328,7 @@ const Include = () => {
       </div>
 
       {/* Top Label */}
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[12px] font-bold tracking-[1em] text-white/10 select-none">
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 text-sm font-medium text-white/10 select-none">
         MASTERING THE DEEP WEB
       </div>
     </section>

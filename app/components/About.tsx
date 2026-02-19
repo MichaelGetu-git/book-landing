@@ -7,7 +7,7 @@ const features = [
     {
         icon: Lightbulb,
         title: "Idea Validation First",
-        description: "Learn to test your business idea before spending a dollar — using real market data, buyer personas, and MVPs."
+        description: "Learn to test your business idea before spending a dollar using real market data, buyer personas, and MVPs."
     },
     {
         icon: Rocket,
@@ -22,7 +22,7 @@ const features = [
     {
         icon: WalletCards,
         title: "Paid Ads on a Budget",
-        description: "Run Google Search and Meta ads profitably — even on small budgets — using precision targeting over spray-and-pray spending."
+        description: "Run Google Search and Meta ads profitably even on small budgets using precision targeting over spray-and-pray spending."
     },
     {
         icon: Mail,
@@ -38,21 +38,21 @@ const features = [
 
 const About = () => {
     return (
-        <section id="about" className="py-32 relative overflow-hidden">
+        <section id="about" className="py-32 relative overflow-hidden font-segoe">
             <div className="container mx-auto px-6 relative z-10">
 
                 {/* Header Block */}
                 <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-24">
                     <div className="space-y-4 max-w-2xl">
-                        <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">
                             What Makes{" "}
-                            <span className="text-primary italic">This Different.</span>
+                            <span className="text-primary">This Different.</span>
                         </h2>
-                        <p className="text-lg text-slate-300 font-normal leading-relaxed">
-                            This collection gives you a complete entrepreneurial operating system — from validating your first idea to running profitable paid ads — so you never have to piece together random advice again.
+                        <p className="text-md md:text-lg text-gray-300 font-extralight leading-relaxed">
+                            This collection gives you a complete entrepreneurial operating system from validating your first idea to running profitable paid ads so you never have to piece together random advice again.
                         </p>
                     </div>
-                    <div className="hidden md:block text-[8rem] font-bold text-white/[0.03] select-none leading-none">
+                    <div className="hidden md:block text-4xl font-bold text-white/[0.03] select-none leading-none">
                         01
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const About = () => {
                             className="group p-8 bg-card border border-white/5 rounded-2xl hover:border-primary/20 transition-all duration-300 relative overflow-hidden"
                         >
                             {/* Feature Number */}
-                            <div className="absolute top-6 right-6 text-[10px] font-bold text-white/10 group-hover:text-primary/30 transition-colors">
+                            <div className="absolute top-6 right-6 text-sm font-bold text-white/10 group-hover:text-primary/30 transition-colors">
                                 {(index + 1).toString().padStart(2, '0')}
                             </div>
 
@@ -74,10 +74,10 @@ const About = () => {
                                     <feature.icon size={24} />
                                 </div>
                                 <div className="space-y-3">
-                                    <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
+                                    <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
                                         {feature.title}
                                     </h3>
-                                    <p className="text-base text-slate-300 font-normal leading-relaxed">
+                                    <p className="text-sm text-gray-300 font-extralight leading-relaxed">
                                         {feature.description}
                                     </p>
                                 </div>

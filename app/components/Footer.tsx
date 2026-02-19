@@ -9,19 +9,19 @@ const Footer = () => (
           <div className="flex items-center space-x-2 mb-4">
             <img src="image.png" alt="" className="w-40" />
           </div>
-          <p className="text-slate-300 text-base max-w-md mb-4">
+          <p className="text-gray-300 text-md md:text-lg font-extralight max-w-md mb-4 leading-relaxed">
             Building the future of team communication with subscription-based
             innovation. Get continuous updates, new features, and dedicated
             support.
           </p>
-          <div className="flex items-center space-x-2 text-sm text-slate-300">
+          <div className="flex items-center space-x-2 text-sm text-gray-300 font-medium">
             <CheckCircle className="w-4 h-4 text-green-400" />
             <span>Regular feature updates included</span>
           </div>
         </div>
         <div>
-          <h4 className="font-semibold mb-4 text-white">Product</h4>
-          <ul className="space-y-2 text-slate-300">
+          <h4 className="text-lg font-bold mb-4 text-white">Product</h4>
+          <ul className="space-y-2 text-sm text-gray-300 font-medium">
             <li>
               <a href="#" className="hover:text-white transition-colors">
                 Features
@@ -46,7 +46,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-        <p>
+        <p className="text-sm font-medium">
           &copy; 2025 Dopebase chat. Built with passion for better team
           communication.
         </p>
