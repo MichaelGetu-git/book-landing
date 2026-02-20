@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { ArrowUpRight, Send } from 'lucide-react'
+import { ArrowUpRight, Send, UserCheck } from 'lucide-react'
 
 const audiences = [
   {
@@ -29,87 +29,71 @@ const audiences = [
 
 const ForWho = () => {
   return (
-    <section id="for-who" className="py-32   relative overflow-hidden font-segoe">
+    <section id="for-who" className="   relative overflow-hidden font-segoe">
       <div className="container mx-auto px-6">
 
-        {/* Header Block: Left-Aligned Stack */}
-        <div className="max-w-4xl mb-24 space-y-12">
+        {/* Header Block: Centered */}
+        <div className="flex flex-col items-center text-center gap-6 mb-24 max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Target{" "}
-            <span className="text-primary">Audience.</span>
+            Who This{" "}
+            <span className="text-primary">Book Is For.</span>
           </h2>
           <div className="space-y-4">
-            <div className="text-sm font-medium text-white/20">
-              blueprint_03
-            </div>
-            <p className="text-md md:text-lg text-gray-300 font-extralight leading-relaxed">
+            <p className="text-md md:text-lg text-gray-300 font-light leading-relaxed max-w-3xl">
               This collection is for builders who want to do the work the right way not for people looking for get-rich-quick tactics or passive income shortcuts.
             </p>
           </div>
         </div>
 
-        {/* Audience Grid - Brutalist Vertical List */}
-        <div className="space-y-0 mb-32 border-t border-white/5">
+        {/* Audience List - Centered Minimalist Vertical */}
+        <div className="max-w-xl mx-auto space-y-12 mb-32">
           {audiences.map((audience, index) => (
             <div
               key={index}
-              className="group flex flex-col md:flex-row md:items-center justify-between gap-8 py-10 border-b border-white/5 hover:bg-white/[0.01] transition-all px-4"
+              className="group flex gap-6 lg:gap-8 items-start"
             >
-              <div className="flex items-center gap-8">
-                <span className="text-sm font-bold text-primary">0{index + 1}</span>
-                <h3 className="text-lg font-bold text-white group-hover:translate-x-4 transition-transform duration-500">
+              <div className="shrink-0 text-emerald-500 pt-1">
+                <UserCheck size={28} />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-lg font-bold text-white">
                   {audience.title}
                 </h3>
+                <p className="text-md text-gray-300 font-light leading-relaxed">
+                  {audience.description}
+                </p>
               </div>
-              <p className="text-sm text-gray-300 font-extralight max-w-md md:text-right leading-relaxed group-hover:text-white transition-colors">
-                {audience.description}
-              </p>
             </div>
           ))}
         </div>
 
-        {/* CTA Block: High-Tech Box */}
-        <div className="relative p-1 bg-white/[0.02] border border-white/5 overflow-hidden">
-          <div className="bg-card p-12 md:p-20 relative z-10 space-y-12">
-
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-white">
-                  Get A Free <br />
-                  <span className="text-primary">Preview.</span>
-                </h2>
-                <p className="text-md md:text-lg text-gray-300 font-extralight max-w-sm leading-relaxed">
-                  Experience the architecture before you commit. We'll send you the first two chapters immediately.
-                </p>
-              </div>
-              <div className="hidden md:block w-32 h-32 border border-white/5 flex items-center justify-center">
-                <ArrowUpRight size={40} className="text-white/10" />
-              </div>
+        {/* CTA Block: Centered Preview */}
+        <div className="relative bg-white/[0.02] border mr-55  ml-55 border-white/5 rounded-2xl overflow-hidden mt-24">
+          <div className="p-12 md:p-20 relative z-10 flex  flex-col items-center text-center space-y-8">
+            <div className="space-y-4 max-w-2xl">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Get A Free Preview
+              </h2>
+              <p className="text-md md:text-lg text-gray-300 font-light leading-relaxed">
+                Sign up to get a free preview of the book. <br />
+                You can offer visitors free book previews to generate leads.
+              </p>
             </div>
 
-            <form className="flex flex-col md:flex-row gap-0 group" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col sm:flex-row gap-2 w-full max-w-xl mx-auto" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
-                placeholder="YOUR_EMAIL_ADDRESS"
-                className="flex-1 bg-white/5 border border-white/10 px-8 py-6 text-white text-md font-medium focus:outline-none focus:border-primary transition-all rounded-xl"
+                placeholder="Your Email"
+                className="flex-1 bg-white/5 border border-white/10 px-6 py-4 text-white text-md font-medium focus:outline-none focus:border-primary transition-all  "
                 required
               />
               <button
                 type="submit"
-                className="bg-primary text-white px-8 py-4 text-md font-semibold hover:bg-primary/90 transition-all shadow-md hover:shadow-lg rounded-full flex items-center gap-4"
+                className="bg-primary text-white px-10 py-4 text-md font-semibold hover:bg-primary/90 transition-all shadow-md  "
               >
-                Send Request <Send size={16} />
+                Send
               </button>
             </form>
-
-          </div>
-
-          {/* Background Decorative Labels */}
-          <div className="absolute top-4 right-4 text-sm font-medium text-white/5 pointer-events-none">
-            DATA_SECURE_ENCRYPTED
-          </div>
-          <div className="absolute bottom-4 left-4 text-sm font-medium text-white/5 pointer-events-none">
-            © 2026_REVOLUTION_THEME
           </div>
         </div>
       </div>
