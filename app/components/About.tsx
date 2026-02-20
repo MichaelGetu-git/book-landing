@@ -38,49 +38,39 @@ const features = [
 
 const About = () => {
     return (
-        <section id="about" className="py-32 relative overflow-hidden font-segoe">
-            <div className="container mx-auto px-6 relative z-10">
+        <section id="about" className="py-32 relative overflow-hidden font-segoe pl-13 pr-13">
+            <div className="container mx-auto px-15 relative z-10">
 
                 {/* Header Block */}
-                <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-24">
-                    <div className="space-y-4 max-w-2xl">
+                <div className="flex flex-col items-center text-center gap-6 mb-24 max-w-3xl mx-auto">
+                    <div className="space-y-4">
                         <h2 className="text-3xl md:text-4xl font-bold text-white">
                             What Makes{" "}
                             <span className="text-primary">This Different.</span>
                         </h2>
-                        <p className="text-md md:text-lg text-gray-300 font-extralight leading-relaxed">
+                        <p className="text-md md:text-lg text-gray-300 font-light leading-relaxed">
                             This collection gives you a complete entrepreneurial operating system from validating your first idea to running profitable paid ads so you never have to piece together random advice again.
                         </p>
-                    </div>
-                    <div className="hidden md:block text-4xl font-bold text-white/[0.03] select-none leading-none">
-                        01
                     </div>
                 </div>
 
                 {/* Card Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group p-8 bg-card border border-white/5 rounded-2xl hover:border-primary/20 transition-all duration-300 relative overflow-hidden"
+                            className="flex flex-col items-center text-center space-y-6"
                         >
-                            {/* Feature Number */}
-                            <div className="absolute top-6 right-6 text-sm font-bold text-white/10 group-hover:text-primary/30 transition-colors">
-                                {(index + 1).toString().padStart(2, '0')}
+                            <div className="w-16 h-16 bg-primary/10 flex items-center justify-center rounded-2xl text-primary transform transition-transform duration-300 hover:scale-110">
+                                <feature.icon size={32} />
                             </div>
-
-                            <div className="space-y-6">
-                                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg text-primary group-hover:scale-110 transition-transform duration-300">
-                                    <feature.icon size={24} />
-                                </div>
-                                <div className="space-y-3">
-                                    <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
-                                        {feature.title}
-                                    </h3>
-                                    <p className="text-sm text-gray-300 font-extralight leading-relaxed">
-                                        {feature.description}
-                                    </p>
-                                </div>
+                            <div className="space-y-4">
+                                <h3 className="text-xl font-bold text-white">
+                                    {feature.title}
+                                </h3>
+                                <p className="text-sm text-gray-300 font-light leading-relaxed">
+                                    {feature.description}
+                                </p>
                             </div>
                         </div>
                     ))}
