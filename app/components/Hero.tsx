@@ -178,8 +178,10 @@ const Hero = () => {
               <div className="bg-background p-6 md:p-8 shadow-sm relative overflow-hidden text-left">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary" />
                 <p className="text-muted-foreground italic text-lg font-light leading-relaxed">
-                  "Highly recommended consectetur adipiscing elit. Proin et auctor dolor, sed venenatis massa. Vestibulum ullamcorper lobortis nisi non placerat praesent mauris neque"
+```tsx
+                  "This collection provided the structured roadmap I needed to transition from a conceptual stage to securing my first paying clients. The practical approach is a refreshing departure from typical entrepreneurial advice."
                 </p>
+```
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-4 px-2">
